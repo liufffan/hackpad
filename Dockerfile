@@ -10,8 +10,6 @@ RUN apt-get install -yf \
 RUN mkdir /etc/hackpad
 RUN mkdir /etc/hackpad/src
 
-# VOLUME /etc/hackpad/src
-
 COPY bin/docker-entrypoint.sh /etc/hackpad/
 COPY * /etc/hackpad/src/
 
