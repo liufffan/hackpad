@@ -21,7 +21,7 @@
 #
 ################################################################################
 
-ETHERPADDIR="."
+ETHERPADDIR="/etc/hackpad/src"
 source "$ETHERPADDIR/bin/exports.sh"
 
 # Rebuild jar
