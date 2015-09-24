@@ -3,7 +3,7 @@ set -e
 
 HACKPAD_SRC="/etc/hackpad/src"
 
-if [ "$1" = 'hackpad' ]; then
+# if [ "$1" = 'hackpad' ]; then
 
 	if [ ! -d "$HACKPAD_SRC" ]; then
 		echo "The directory $HACKPAD_SRC doesn't exist."
@@ -47,13 +47,13 @@ if [ "$1" = 'hackpad' ]; then
 
 	./bin/run.sh
 
-elif [[  "$1" = 'server' ]]; then
-	echo 
-	echo "Starting server."
-	echo
+#elif [[  "$1" = 'server' ]]; then
+#	echo 
+#	echo "Starting server."
+#	echo
 
-	./bin/run.sh
+#	./bin/run.sh
 
-fi
+#fi
 
 exec "$@"
