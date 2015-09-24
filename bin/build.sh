@@ -21,7 +21,7 @@
 #
 ################################################################################
 
-ETHERPADDIR="$(cd "$(dirname "$0")/.."; pwd)"
+ETHERPADDIR="."
 source "$ETHERPADDIR/bin/exports.sh"
 
 # Rebuild jar
