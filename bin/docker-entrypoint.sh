@@ -22,7 +22,7 @@ HACKPAD_SRC="/etc/hackpad/src"
 	fi
 
 	echo "-->Editing configuration files"
-
+        echo "sed start"
 	sed 's:^export SCALA_HOME=".*$:export SCALA_HOME="/usr/share/java":' -i'' bin/exports.sh
 	sed 's:^export SCALA_LIBRARY_JAR=".*$:export SCALA_LIBRARY_JAR="$SCALA_HOME/scala-library.jar":' -i'' bin/exports.sh
 	sed 's:^export JAVA_HOME=".*$:export JAVA_HOME="/usr/share/java":' -i'' bin/exports.sh
@@ -31,9 +31,9 @@ HACKPAD_SRC="/etc/hackpad/src"
 	sed 's:__email_addresses_with_admin_access__:admin@localhost.info:' -i'' etherpad/etc/etherpad.local.properties
 
 	echo "-->Running build"
-
+        echo "build start"
 	./bin/build.sh
-
+        echo "mysql start"
 	echo "-->Starting mysql"
 	service mysql restart
 
