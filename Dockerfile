@@ -12,6 +12,7 @@ RUN mkdir /etc/hackpad
 VOLUME /etc/hackpad/src
 
 COPY bin/docker-entrypoint.sh /etc/hackpad/
+COPY . /etc/hackpad/src/
 
 ENTRYPOINT ["/etc/hackpad/docker-entrypoint.sh"]
 
