@@ -15,6 +15,6 @@ COPY bin/docker-entrypoint.sh /etc/hackpad/
 
 ENTRYPOINT ["/etc/hackpad/docker-entrypoint.sh"]
 
-EXPOSE 9000
+EXPOSE 5000
 
 CMD ["hackpad"]
